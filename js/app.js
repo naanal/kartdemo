@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('naanalkart', ['ngRoute'])
+angular.module('naanalkart', ['ngRoute','ui.bootstrap','ngFileUpload'])
 	.config(['$routeProvider', '$locationProvider',
 		function($routeProvider, $locationProvider) {
 		$routeProvider

@@ -15,6 +15,20 @@ angular.module('naanalkart')
             }, function errorCallback(response) {
                 errFunction(response);
             });
+        },
+        obj.postOrders = function(data){
+            return $http({
+                method: "POST",
+                url: 'http://localhost:3000/orders',
+                data: data,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(function(response) { 
+                return response.data;
+            }, function errorCallback(response) {
+                errFunction(response);
+            });
         }
         
         return obj;

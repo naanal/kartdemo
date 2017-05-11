@@ -1,0 +1,80 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Upload Orders</h3>
+</div>
+<div class="modal-body" id="modal-body">
+
+        <button type="file" ngf-select="uploadFiles($file)" accept=".csv" class="btn btn-primary" data-toggle="tooltip" title="Upload .csv file">
+            Click Here to Upload a File
+        </button>
+        <button class="btn btn-sucess" ng-click="uploadFiles();enableTable()" ng-show="isShow">Process Csv</button>  
+        
+        <br/> File:
+            <div style="font:smaller"> {{f.name}} {{errFile.name}} {{errFile.$error}} {{errFile.$errorParam}}</div>
+            {{errorMsg}}
+          
+    <div class="table-responsive" ng-show="isShowTable">            
+   <table class="table">
+    <thead>
+      <tr>
+      <th>SNo</th>
+       <th>DocketNo</th>
+       <th>OrderNo</th>
+        <th>ReceiverName</th>
+        <th>ReceiverAddress1</th>
+        <th>ReceiverAddress2</th>
+        <th>ReceiverAddress3</th>
+       <th>ReceiverCity</th>
+        <th>ReceiverState</th>
+        <th>ReceiverPinCode</th>
+        <th>ReceiverPhone</th>
+       <th>ReceiverLandmark</th>
+        <th>Type</th>
+        <th>Weight</th>
+        <th>Seller</th>
+        <th>SellerAddress1</th>
+        <th>SellerAddress2</th>
+        <th>SellerAddress3</th>
+        <th>SellerCity</th>
+        <th>SellerState</th>
+        <th>SellerPinCode</th>
+        <th>SourceStationCode</th>
+        <th>DestStationCode</th>
+        <th>ShippedDate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="norder in newOrders">
+        <td>{{norder.id}}</td>
+         <td>{{norder.DocketNo}}</td>
+          <td>{{norder.DocketNo}}</td>
+          <td>{{norder.OrderNo}}</td>
+          <td>{{norder.ReceiverName}}</td>
+          <td>{{norder.ReceiverAddress1}}</td>
+          <td>{{norder.ReceiverAddress2}}</td>
+          <td>{{norder.ReceiverAddress3}}</td>
+          <td>{{norder.ReceiverCity}}</td>
+          <td>{{norder.ReceiverState}}</td>
+          <td>{{norder.ReceiverPinCode}}</td>
+          <td>{{norder.ReceiverPhone}}</td>
+          <td>{{norder.ReceiverLandmark}}</td>
+          <td>{{norder.Type}}</td>
+          <td>{{norder.Weight}}</td>
+          <td>{{norder.Seller}}</td>
+          <td>{{norder.SellerAddress1}}</td>
+          <td>{{norder.SellerAddress2}}</td>
+          <td>{{norder.SellerAddress3}}</td>
+          <td>{{norder.SellerCity}}</td>
+          <td>{{norder.SellerState}}</td>
+          <td>{{norder.SellerPinCode}}</td>
+          <td>{{norder.SourceStationCode}}</td>
+          <td>{{norder.DestStationCode}}</td>
+          <td>{{norder.ShippedDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="save()">Save</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>
