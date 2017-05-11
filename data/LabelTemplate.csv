@@ -1,0 +1,3 @@
+id,ReceiverName,ReceiverAddress1,ReceiverAddress2,ReceiverAddress3,ReceiverCity,ReceiverState,ReceiverPinCode,ReceiverPhone,ReceiverLandmark,DocketNo,Type,OrderNo,Weight,Seller,SellerAddress1,SellerAddress2,SellerAddress3,SellerCity,SellerState,SellerPinCode,SourceStationCode,DestStationCode,ShippedDate
+34,Santosh,"15-F1, Bethel Flats",Saraswathy Gopalan st,Adyar,Chennai,Tamilnadu,600020,9812112101,Near GR Residency,121AS891,Edible,ODCOD121,1.2,Arom,"22, Mariamman koil street",Nethimedu,,Bengaluru,Karnataka,560002,MAA,BAA,10-May-17
+54,Santosh,"15-F1, Bethel Flats",Saraswathy Gopalan st,Adyar,Chennai,Tamilnadu,600020,9812112101,Near GR Residency,121AS891,Edible,ODCOD121,1.2,Arom,"22, Mariamman koil street",Nethimedu,,Bengaluru,Karnataka,560002,MAA,BAA,10-May-17
